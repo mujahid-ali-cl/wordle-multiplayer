@@ -63,9 +63,9 @@ export function WordleGrid({
   };
 
   return (
-    <div className="max-w-sm mx-auto space-y-2">
+    <div className="mx-auto space-y-2" style={{maxWidth: '18rem'}}>
       {rows.map((row, rowIndex) => (
-        <div key={rowIndex} className="grid grid-cols-5 gap-2">
+        <div key={rowIndex} className="grid grid-cols-5 gap-0.5">
           {row.letters.map((letter, colIndex) => (
             <div
               key={colIndex}
